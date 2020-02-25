@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test HTML CSS - Contact</title>
+		<link href="screen.css" rel="stylesheet" media="screen">
+		<meta name="viewport" content="width=480">
+	</head>
+	<body id="contact" onload="document.getElementById('firstname').focus();">
+		<div id="wrapper">
+			<div id="header">
+				<h1>Test HTML CSS</h1>
+				<p>Michael Wollensack</p>
+				<div id=nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="basics.html">Basics</a></li>
+						<li><a href="tables.html">Tables</a></li>
+						<li><a href="figures.html">Figures</a></li>
+						<li class="selected"><a href="contact.html">Contact</a></li>
+					</ul> 
+				</div> <!-- end of nav -->
+			</div> <!-- end of header -->
+			<div id="content">
+				<h2>Contact</h2>
+				<p>Please fill in all fields with *</p>
+				<form id="contactform" action="#">
+					<div class="title">
+						<label for="title">Title:*</label>
+						<select id="title" required>
+							<option>Mister</option>
+							<option>Miss</option>
+							<option>Misses</option>
+						</select>
+					</div>					
+					<div class="firstname">
+						<label for="firstname">First name:*</label>
+						<input type="text" id="firstname" name="firstname" required>
+					</div>
+					<div class="lastname">
+						<label for="lastname">Last name:*</label>
+						<input type="text" id="lastname" name="lastname" required>
+					</div>
+					<div class="email">
+						<label for="email">E-Mail:*</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div class="addressbar1">
+						<label for="addressbar1">Address bar 1:*</label>
+						<input type="text" id="addressbar1" name="addressbar1" required>
+					</div>
+					<div class="addressbar2">
+						<label for="addressbar2">Address bar 2:</label>
+						<input type="text" id="addressbar2" name="addressbar2">
+					</div>
+					<div class="zipcode">
+						<label for="zipcode">Zip code:*</label>
+						<input type="text" id="zipcode" name="zipcode" maxlength="5" required>
+					</div>
+					<div class="location">
+						<label for="location">Location:*</label>
+						<input type="text" id="location" name="location" required>
+					</div>
+					<div class="country">
+						<label for="country">Country:*</label>
+						<select id="country" required>
+							<option>Switzerland</option>
+							<option>Germany</option>
+							<option>Other</option>
+						</select>
+					</div>					
+					<div class="message">
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" cols="20" rows="5"></textarea>
+					</div>
+					<div>
+						<input type="submit" value="Submit">
+					</div>
+				</form>
+			</div> <!-- end of content -->
+			<div id="footer">
+				<address>Michael Wollensack &middot; Seftaustrasse 24a &middot; 3047 Bremgarten b. Bern
+				</address>
+			</div> <!-- end of footer -->			
+		</div> <!-- end of wrapper -->
+	</body>
+</html>
